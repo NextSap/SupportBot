@@ -1,2 +1,2 @@
 # SupportBot
-It is a discord bot support.
+It is a Discord support bot.
