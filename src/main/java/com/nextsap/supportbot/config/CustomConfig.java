@@ -4,12 +4,14 @@ public class CustomConfig {
 
     private String ticketChannel;
     private String ticketCategory;
+    private String ticketChannelName;
     private String emoticon;
     private String message;
 
-    public CustomConfig(String ticketChannel, String ticketCategory, String emoticon, String message) {
+    public CustomConfig(String ticketChannel, String ticketCategory, String ticketChannelName, String emoticon, String message) {
         this.ticketChannel = ticketChannel;
         this.ticketCategory = ticketCategory;
+        this.ticketChannelName = ticketChannelName;
         this.emoticon = emoticon;
         this.message = message;
     }
@@ -17,6 +19,7 @@ public class CustomConfig {
     public CustomConfig() {
         this.ticketChannel = null;
         this.ticketCategory = null;
+        this.ticketChannelName = null;
         this.emoticon = null;
         this.message = null;
     }
@@ -35,6 +38,14 @@ public class CustomConfig {
 
     public void setTicketCategory(String ticketCategory) {
         this.ticketCategory = ticketCategory;
+    }
+
+    public String getTicketChannelName() {
+        return ticketChannelName;
+    }
+
+    public void setTicketChannelName(String ticketChannelName) {
+        this.ticketChannelName = ticketChannelName;
     }
 
     public String getEmoticon() {

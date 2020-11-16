@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 public class Serializer {
 
     public static String serialize(Object object) {
+        // TODO: Format the json to have a better file
         return new Gson().toJson(object);
     }
 

@@ -42,8 +42,10 @@ public class ConfigManager {
         try {
             File file = new File("Config.txt");
 
-            if (!file.exists())
+            if (!file.exists()) {
                 file.createNewFile();
+                Files.write(Paths.get("Config.txt"), Serializer.serialize(new CustomConfig()).getBytes(), StandardOpenOption.WRITE);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
